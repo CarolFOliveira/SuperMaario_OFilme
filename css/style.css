@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header .logo{
+    width: 65px;
+
+}
+
+.header .menu{
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header nav li{
+    list-style: none;
+}
+.header nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.2s;
+    
+}
+.header nav li a:hover{
+    color: #d5011d;
+ 
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-height: calc(100vh - 129px);
+    padding: 0 30px 30px 30px;
+}
+.imagem_mario{
+    max-width: 500px;
+}
+.descricao{
+    color:#a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.bt-trailler{
+    cursor: pointer;
+    background-color: #ff0021;
+    color:#fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+.bt-trailler:hover{
+    transform: scale(1.1);
+}
+.fundo-video{
+    background-color: #d5011d;
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+}
+.fundo-video .video{
+    width: 100vw;
+    height: 100vh;
+}
+.fundo-video::after{
+    content:"";
+    background-color: #0f0f0f;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+
+
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+    
+}
+.modal{
+    
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.modal.aberto{
+    visibility: visible;
+}
+.conteudo-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+.fechar-modal{
+    background-color: #fff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+}
+
+.modal iframe{
+    
+    width: 640px;
+    height: 360px;
+}
+
+

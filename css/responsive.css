@@ -1,0 +1,68 @@
+
+
+@media(max-width:1200px){
+    body{
+        background-color: #141313;
+        background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+    .container .mario{
+        max-width: 50%;
+        
+    }
+    .fundo-video{
+        display: none;
+    }
+    .bt-trailler{
+        background-color: #ff0021;
+    }
+    .container .info{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .descricao{
+        color:#fff;
+        text-align: center;
+    }
+    .modal #video{
+        width: 300px;
+        height: 169px;
+    }
+
+}
+@media(max-width:500px){
+    .container .imagem_mario{
+        
+        max-width: 70%;
+    }
+
+    .header{
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 10px;
+        
+        
+    }
+    .descricao{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .bt-trailler{
+        background-color: #ff0021;
+        font-size: 16px;
+        padding: 10px;
+
+    }
+    .modal #video{
+        width: 250px;
+        height: 169px;
+    }
+}
